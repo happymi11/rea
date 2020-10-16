@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px dotted red;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    border: 0;
+    text-decoration: none;
+    color: #333;
+}
+
+/*검수용 이미지*/
+.vi {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+    opacity: .4;
+    /*display: none;*/
+}
+
+/*공통 클래스*/
+.bld {
+    /*숨기기*/
+    display: none;
+}
+
+.ir {
+    /*IR(image replacement) 숨기기*/
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/*비율박스 class
+.rbx / .rbx::before / .rbxIn*/
+.rbx {
+    position: relative;
+    /*속박스에 대한 부모*/
+    width: 100%;
+}
+
+/*비율박스 가상요소로 패딩밀기*/
+.rbx::before {
+    content: "";
+    display: block;
+    padding-top: 40%;
+}
+
+/*추가비율-컨텐츠박스*/
+.rbx2::before {
+    padding-top: 50%;
+}
+
+/*비율박스의 속박스*/
+.rbxIn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+#wrap {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+#header_wrap {
+    width: 100%;
+}
+
+.logo {
+    text-align: center;
+}
+
+
+/*위로이동버튼*/
+#tbtn {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 70%;
+    right: 100px;
+    font: bold 20px Verdana;
+    color: #f00;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    /*손가락*/
+    display: none;
+    /*처음에 안보임*/
+}

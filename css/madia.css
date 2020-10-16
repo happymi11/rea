@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* 래미안 미디어 쿼리 CSS - media.css */
+
+/*모바일 사이즈 미디어쿼리*/
+@media only screen and (max-width:800px) {
+
+    /*1.속박스(.inbox)의 width크기 100%로*/
+    /*2.파티션박스(class="col-")의 width 크기 100%로*/
+    .inbox {
+        width: 100%;
+    }
+.ban {
+    position: static;
+    }
+    /*5.로그인 메뉴박스 없애기*/
+    .gnb_wrap{
+        position: static;
+        z-index: 2;
+        
+    }
+   
+    /*햄버거버튼 보이기*/
+    #ham {
+        position: absolute;
+        top:30px;
+        left:30px;
+        display: block;
+    }
+
+    /*6.GNB 메뉴 전체페이지에 보이게*/
+    .gnb {
+        overflow: hidden;
+/*        display: none;*/
+        position: absolute;
+        top: 30vmin;
+        left: 0;       
+        width:50%;
+        height:0;        
+        padding-left: 0;
+        transform: none;
+        transition: all .4s;
+        /*햄버거버튼 클릭전 숨기기*/
+    }
+    .gnb.on{
+/*        display: block;*/
+    height: 30%;
+    }
+    .gnb li{
+        height: 25%;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .gnb > li:nth-child(2){
+        margin: 0;
+    }
+    /*마우스오버시 높이변경 제거*/
+    .gnb:hover {
+        height: auto;
+    }
+
+    .gnb dl {
+        width: 100%;
+        height: 72px;
+        text-align: center;
+        border-left: none;
+    }
+
+    .gnb dl:nth-child(1) {
+        left: 0;
+        margin-top: 131px;
+    }
+
+    /*상위메뉴 글자크기 등 변경*/
+    .gnb dt {
+        font-size: 33px;
+        line-height: 58px;
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    /*상위메뉴글자색 변경*/
+    .gnb dt a {
+        color: #fff;
+    }
+
+    /*하위메뉴 없앰*/
+    .sub {
+        display: none;
+    }
+
+    /*캐릭터쇼핑몰 아이콘 제거*/
+    .gnb dl:last-child dt a::before {
+        display: none;
+    }
+
+    /*배경라인박스 제거*/
+    .gnbline {
+        display: none;
+    }
+
+    /*GNB 부모박스 영향없도록 수정*/
+    .gnbbox {
+        height: 0;
+        padding: 0;
+    }
+
+
+    /* 이동버튼 숨기기*/
+    .prev,
+    .next {
+        display: none;
+    }
+
+    /*배너 각 이미지 변경하기*/
+    .ban li:first-child {
+        background-image: url(../images/mob/mainVisual_22529079.png);
+    }
+
+    .ban li:nth-child(2) {
+        background-image: url(../images/mob/mainVisual_02359723.png);
+    }
+
+    /*컨텐츠 중앙박스 높이값 자동으로 변경!*/
+    #cont {
+        height: auto;
+    }
+
+    .inbox {
+        height: auto;
+    }
+
+
+
+    /*sns박스*/
+    .sns_box {
+        position: static;
+        text-align: center;
+        margin-left: 5rem;
+    }
+
+    .snsimg_wrap {
+        padding-top: 3rem 0 0 3rem;
+        margin-bottom: 5rem;
+    }
+
+    /************gallery 스와이퍼********************************/
+     .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    }
+    
+    /*이벤트 박스*/
+    .event_one {
+        background-image: url(../images/mob/mainEvent_70667911.png);
+    }
+
+    /*스타일 이미지*/
+    .style_wrap li {
+        width: 100%;
+        margin-bottom: 3rem;
+        margin: 1rem;
+    }
+
+    .style_wrap li:nth-child(2) {
+        position: static;
+    }
+
+    .times::before {
+        position: static;
+    }
+
+    /* 퀵메뉴*/
+
+    .menu_list {
+        border: none;
+        padding-top: 3rem;
+    }
+
+    .menu_list li {
+        width: 20%;
+    }
+
+    .menu_list span {
+        display: none;
+    }
+
+    .menu_wrap {
+        margin: 1rem;
+    }
+
+    .times_list {
+        position: static;
+        padding-top: 5rem;
+    }
+
+    .times_list li {
+        position: static;
+        width: 44%;
+        display: inline-block;
+    }
+
+    .times_wrap {
+        margin: 1rem;
+    }
+
+    /*news 흐르는것*/
+    .news {
+        /*display: none;*/
+    }
+
+    .news_wrap {
+        position: static;
+        width: 100%;
+        margin: 0;
+    }
+
+    .news_list {
+        position: static;
+        border: 1px solid #aaa;
+    }
+
+    .event_wrap {
+        padding-top: 3rem;
+    }
+
+    #footer_wrap {
+        position: static;
+        clear: both;
+    }
+
+    .f_info_list {
+        display: none;
+    }
+
+    .info {
+        width: auto;
+        height: auto;
+    }
+
+    .info p {
+        display: none;
+    }
+
+
+
+
+
+}
+
+/*모바일 미디어쿼리*/

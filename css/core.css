@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*core.css - 공통핵심(웹폰트, 공통class)*/
+
+
+.bld{/*IR숨김-배경이미지 넣고 설명넣는 방법*/
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/*중앙정렬박스*/
+.inbox{
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+    /*outline: 2px dashed red;*/
+}
