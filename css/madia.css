@@ -255,3 +255,184 @@
 }
 
 /*모바일 미디어쿼리*/
+
+@media only screen and (max-width:400px) {
+
+    
+
+       .ban video {
+
+        position: static;
+
+        height: 100%;
+
+    }
+
+   .ban li:nth-child(2) {
+
+        background-image: url(../images/mob/mainVisual_02359723.png)  center/cover;
+
+        height: 100%;
+
+    }
+
+.ban_wrap {
+
+    margin-top: 50px;
+    height: 50%;
+
+   
+
+}
+
+    
+
+    .inbox {
+
+        height: auto;
+
+    }
+
+ 
+
+    .gnb {
+
+        display: none;
+
+    }
+
+ 
+
+    .gnb_wrao {
+
+        margin: 0;
+
+        padding: 0;
+
+    }
+
+ 
+
+    .sns .inbox {
+
+        padding-top: 1rem;
+
+    }
+
+ 
+
+    .snsimg_wrap {
+
+        margin: 0;
+
+    }
+
+ 
+
+    .gallery_box {
+
+        width: 120%;
+
+    }
+
+ 
+
+    .btn_next {
+
+    position: static;
+
+    bottom: 50%;
+
+    right: 30%;
+
+    }
+
+    .btn_pre {
+
+    position: static;
+
+    bottom: 50%;
+
+    left: 30%;
+
+    }
+
+    .move_wrap {
+
+        padding-top: 1rem;
+
+    }
+
+ 
+
+    .event_one {
+
+        margin: 1rem 0;
+
+    }
+
+ 
+
+    .gallery .inbox {
+
+        height: 800px;
+
+    }
+
+ 
+
+    .menu_list {
+
+        margin-top: 1rem;
+
+        padding-bottom: 3rem;
+
+    }
+
+ 
+
+    .menu_list li {
+
+        width: 33.33%;
+
+        margin-top: 0 auto;
+
+        text-align: center;
+
+    }
+
+ 
+
+    .times_list {
+
+        padding-top: 13rem;
+
+    }
+
+ 
+
+    .times_list li {
+
+        width: 98%;
+
+    }
+
+    .event_wrap{
+
+        width:200%;
+
+        clear:both;
+
+    }
+
+   .event .a img {
+
+    width: 100%;
+
+}   .event .b img {
+
+    width: 50%;
+
+}
+
+}
